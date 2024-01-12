@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 3rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--green);
+}
+
+.btn12{
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .2rem;
+    padding-left: 1rem;
+    border:var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color:var(--green);
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: #fff;
+}
+
+.btn12 span{
+    padding:.5rem 1rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color:#fff;
+    margin-left: .5rem;
+}
+
+.btn12:hover{
+    background: var(--green);
+    color:#fff;
+}
+
+.btn12:hover span{
+    color: var(--green);
+    background:#fff;
+    margin-left: 1rem;
+}
+
+
+.book .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+ 
+
+
+.book .row .image img{
+    width: 50%;
+}
+
+.book .row form{
+    width: 50%;
+    height: 550px;
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    
+    align-items: center;
+    justify-items: flex-end;
+    background: #fff;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.book .row form h3{
+    color:var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.book .row form .box{
+    width: 50%;
+    justify-items: flex-end;
+    margin:.2rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 1rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 0.5rem;
+}
+
+.book .row form .btn12{
+    padding:1rem 2rem;
+}
+
+.book label{
+    text-align: left;
+    text-shadow: var(--text-shadow);
+    letter-spacing: .4rem;
+    color:#16a085;
+    font-size: 30px;
+    
+}
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}

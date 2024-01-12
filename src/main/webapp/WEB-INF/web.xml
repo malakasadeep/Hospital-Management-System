@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+  <display-name>Hospital Management System</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+    <servlet>
+		<servlet-name>registration</servlet-name>
+		<servlet-class>com.hms.user.UserRegistrationServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.hms.user.UserLoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>com.hms.user.UserLogoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/out</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>appointment</servlet-name>
+		<servlet-class>com.hms.user.AppointmentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>appointment</servlet-name>
+		<url-pattern>/new</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>viewappointment</servlet-name>
+		<servlet-class>com.hms.user.AppointmentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>viewappointment</servlet-name>
+		<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>insertappointment</servlet-name>
+		<servlet-class>com.hms.user.AppointmentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>insertappointment</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>deleteappointment</servlet-name>
+		<servlet-class>com.hms.user.AppointmentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deleteappointment</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>editappointment</servlet-name>
+		<servlet-class>com.hms.user.AppointmentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>editappointment</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateappointment</servlet-name>
+		<servlet-class>com.hms.user.AppointmentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateappointment</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>rlogin</servlet-name>
+		<servlet-class>com.hms.receptionist.ReceptionistLoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>rlogin</servlet-name>
+		<url-pattern>/rlog</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>doctor</servlet-name>
+		<servlet-class>com.hms.receptionist.DoctorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>doctor</servlet-name>
+		<url-pattern>/doc_new</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>viewdoctor</servlet-name>
+		<servlet-class>com.hms.receptionist.DoctorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>viewdoctor</servlet-name>
+		<url-pattern>/doc_list</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>insertdoctor</servlet-name>
+		<servlet-class>com.hms.receptionist.DoctorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>insertdoctor</servlet-name>
+		<url-pattern>/doc_insert</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>deletedoctor</servlet-name>
+		<servlet-class>com.hms.receptionist.DoctorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deletedoctor</servlet-name>
+		<url-pattern>/doc_delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>editdoctor</servlet-name>
+		<servlet-class>com.hms.receptionist.DoctorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>editdoctor</servlet-name>
+		<url-pattern>/doc_edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatedoctor</servlet-name>
+		<servlet-class>com.hms.receptionist.DoctorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updatedoctor</servlet-name>
+		<url-pattern>/doc_update</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>admit</servlet-name>
+		<servlet-class>com.hms.admit.AdmitServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>admit</servlet-name>
+		<url-pattern>/patient_new</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>viewadmit</servlet-name>
+		<servlet-class>com.hms.admit.AdmitServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>viewadmit</servlet-name>
+		<url-pattern>/patient_list</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>insertadmit</servlet-name>
+		<servlet-class>com.hms.admit.AdmitServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>insertadmit</servlet-name>
+		<url-pattern>/patient_insert</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>deleteadmit</servlet-name>
+		<servlet-class>com.hms.admit.AdmitServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deleteadmit</servlet-name>
+		<url-pattern>/patient_delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>editadmit</servlet-name>
+		<servlet-class>com.hms.admit.AdmitServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>editadmit</servlet-name>
+		<url-pattern>/patient_edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateadmit</servlet-name>
+		<servlet-class>com.hms.admit.AdmitServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateadmit</servlet-name>
+		<url-pattern>/patient_update</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>addMed</servlet-name>
+		<servlet-class>com.hms.medication.medicationServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>addMed</servlet-name>
+		<url-pattern>/med_new</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>viewMed</servlet-name>
+		<servlet-class>com.hms.medication.medicationServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>viewMed</servlet-name>
+		<url-pattern>/med_list</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>insertMed</servlet-name>
+		<servlet-class>com.hms.medication.medicationServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>insertMed</servlet-name>
+		<url-pattern>/med_insert</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>deleteMed</servlet-name>
+		<servlet-class>com.hms.medication.medicationServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deleteMed</servlet-name>
+		<url-pattern>/med_delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>editMed</servlet-name>
+		<servlet-class>com.hms.medication.medicationServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>editMed</servlet-name>
+		<url-pattern>/med_edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateMed</servlet-name>
+		<servlet-class>com.hms.medication.medicationServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateMed</servlet-name>
+		<url-pattern>/med_update</url-pattern>
+	</servlet-mapping>
+</web-app>
